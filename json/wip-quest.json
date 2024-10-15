@@ -1,0 +1,34 @@
+{
+    "来る (kuru)": [
+        {
+            "title": "来ました。",
+            "sentence": "私は昨日学校に ____ 。",
+            "targetConjugation": "Past Positive",
+            "correct": "来ました。",
+            "explanation": "To form the past positive, you append 'ました' to the verb stem."
+        },
+        {
+            "title": "来ませんでした。",
+            "sentence": "私は昨日学校に ____ 。",
+            "targetConjugation": "Past Negative",
+            "correct": "来ませんでした。",
+            "explanation": "To form the past negative, you append 'ませんでした' to the verb stem."
+        }
+    ],
+    "帰る (kaeru)": [
+        {
+            "title": "帰ります。",
+            "sentence": "彼は昨日家に ____ 。",
+            "targetConjugation": "Present Positive",
+            "correct": "帰ります。",
+            "explanation": "To form the present positive, you append 'ます' to the verb stem."
+        },
+        {
+            "title": "帰りました。",
+            "sentence": "彼は昨日家に ____ 。",
+            "targetConjugation": "Past Positive",
+            "correct": "帰りました。",
+            "explanation": "To form the past positive, you append 'ました' to the verb stem."
+        }
+    ]
+}

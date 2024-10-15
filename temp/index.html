@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Japanese Verb Quiz</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Quiz container where jQuery will dynamically insert content -->
+    <div id="quiz-container"></div>
+
+    <!-- Cheat Sheet Modal -->
+    <div id="cheat-sheet-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Japanese Verb Conjugation Cheat Sheet</h2>
+            <p>
+                Japanese verbs are categorized into three groups:
+            </p>
+            <ul>
+                <li><strong>Group 1 (Godan verbs):</strong> Verbs ending with consonant sounds.</li>
+                <li><strong>Group 2 (Ichidan verbs):</strong> Verbs ending with the syllable "iru" or "eru".</li>
+                <li><strong>Irregular verbs:</strong> Only two verbs, "する (suru)" and "来る (kuru)".</li>
+            </ul>
+            <h3>Conjugation Patterns:</h3>
+            <p>
+                To conjugate Group 1 verbs, change the final syllable according to the desired form:
+            </p>
+            <table>
+                <tr>
+                    <th>Form</th>
+                    <th>Conjugation Rule</th>
+                    <th>Example (書く - kaku)</th>
+                </tr>
+                <tr>
+                    <td>Te-form</td>
+                    <td>Change final 'ku' to 'ite'</td>
+                    <td>書いて (kaite)</td>
+                </tr>
+                <tr>
+                    <td>Past Positive</td>
+                    <td>Change final 'ku' to 'ita'</td>
+                    <td>書いた (kaita)</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+            <p>
+                For Group 2 verbs, drop the 'る' and add the appropriate ending:
+            </p>
+            <table>
+                <tr>
+                    <th>Form</th>
+                    <th>Conjugation Rule</th>
+                    <th>Example (食べる - taberu)</th>
+                </tr>
+                <tr>
+                    <td>Te-form</td>
+                    <td>Add 'て'</td>
+                    <td>食べて (tabete)</td>
+                </tr>
+                <tr>
+                    <td>Past Positive</td>
+                    <td>Add 'た'</td>
+                    <td>食べた (tabeta)</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+            <p>
+                Irregular verbs have unique conjugations:
+            </p>
+            <table>
+                <tr>
+                    <th>Verb</th>
+                    <th>Te-form</th>
+                    <th>Past Positive</th>
+                </tr>
+                <tr>
+                    <td>する (suru)</td>
+                    <td>して (shite)</td>
+                    <td>した (shita)</td>
+                </tr>
+                <tr>
+                    <td>来る (kuru)</td>
+                    <td>来て (kite)</td>
+                    <td>来た (kita)</td>
+                </tr>
+            </table>
+            <p>
+                <!-- Add more detailed rules and examples as needed -->
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

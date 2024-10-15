@@ -15,6 +15,10 @@
         {
             "name": "Country (21)",
             "url": "country.html"
+        },
+        {
+            "name": "Conjugations (WIP)",
+            "url": "broken.html"
         }
     ]
 }

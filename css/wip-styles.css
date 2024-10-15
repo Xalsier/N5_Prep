@@ -1,0 +1,172 @@
+
+
+/* Ensure the quiz container is also centered */
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the card */
+.wipcard {
+    background-color: #f7f7f7;
+    padding: 40px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;      /* Ensure the card scales within the container */
+}
+
+/* Center and space the options */
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Allow wrapping if there are too many options */
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Ensure the option cards are centered and sized appropriately */
+.option-card {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-basis: 50%;      /* Allow flexible width of the option cards */
+    max-width: 150px;     /* Set a maximum width for the cards */
+    min-width: 120px;     /* Set a minimum width for consistency */
+    box-sizing: border-box;
+}
+
+/* Hover effect for options */
+.option-card:hover {
+    background-color: #d0d0d0;
+}
+
+.option-card.correct {
+    background-color: #b3ffb3 !important; /* Pastel Green */
+}
+
+.option-card.wrong {
+    background-color: #ffcccc !important; /* Pastel Red */
+}
+
+/* Continue button styling */
+.continue-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.continue-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Error message box */
+.message-box {
+    display: none;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Help button styling */
+#help-btn {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#help-btn:hover {
+    background-color: #218838;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Max width */
+    position: relative;
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.modal-content .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.modal-content table, .modal-content th, .modal-content td {
+    border: 1px solid #ddd;
+}
+
+.modal-content th, .modal-content td {
+    padding: 8px;
+    text-align: left;
+}
+
+.modal-content th {
+    background-color: #f2f2f2;
+}
