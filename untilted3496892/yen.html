@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Much Yen Does This Cost?</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/yen-game.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guess the Cost</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul id="navMenu"></ul>
+    </nav>
+
+    <!-- App Card Section -->
+    <section class="app-card">
+        <div class="card">
+            <h2>How much does this item cost?</h2>
+            <p id="item-emoji" style="font-size: 3em;"></p>
+
+            <!-- Display price in Kanji with furigana -->
+            <p id="kanji-price" style="font-size: 2em;"></p>
+
+            <!-- Input box for user to enter the price -->
+            <input type="number" id="yen-input" placeholder="Enter price in yen" style="margin-top: 10px; padding: 10px; width: 80%;" />
+
+            <!-- Button to submit answer -->
+            <button id="submit-btn" class="btn" style="margin-top: 15px;">Submit</button>
+
+            <!-- Feedback message -->
+            <p id="feedback" style="margin-top: 15px;"></p>
+
+            <!-- Next question button -->
+            <button id="next-btn" class="btn hidden" style="margin-top: 15px;">Next Item</button>
+
+            <p style="margin-top: 15px;">Did you know 億 (oku) is used for 100 million?</p>
+        </div>
+    </section>
+</body>
+</html>

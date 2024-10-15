@@ -1,0 +1,114 @@
+/* Base styles with dark brown aesthetic */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #362E2B;
+    color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4A3F3D;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header p {
+    color: #FAF3E3;
+}
+
+.game-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card {
+    background-color: #FAF9F6;
+    color: #3B2F2F;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: auto; /* Allow scrolling within the card */
+    max-height: 80vh; /* Prevent the card from growing too tall */
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.option {
+    background-color: #FFAE42;
+    color: #3B2F2F;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #FFD27F;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+    min-height: 40px;
+}
+
+#explanation-button, #next-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FFAE42;
+    color: #3B2F2F;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#explanation-button:hover, #next-button:hover {
+    background-color: #FFD27F;
+}
+
+#explanation {
+    margin-top: 15px;
+    font-size: 1em;
+    text-align: left;
+    background-color: #FFF5EE;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 50vh; /* Limit the height of explanation */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button coloring after selection */
+.correct {
+    background-color: #77DD77; /* Pastel green */
+    color: #3B2F2F;
+}
+
+.incorrect {
+    background-color: #FF6961; /* Pastel red */
+    color: #3B2F2F;
+    opacity: 0.6;
+}

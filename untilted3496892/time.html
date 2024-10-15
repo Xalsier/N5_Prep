@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/time-styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/time-game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guess the Time</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul id="navMenu"></ul>
+    </nav>
+
+    <!-- App Card Section -->
+    <section class="app-card game-section">
+        <div class="card">
+            <h2 id="time-question">What is the time for: <span id="time-to-guess"></span>?</h2>
+            <div class="options">
+                <button class="option" id="option1"></button>
+                <button class="option" id="option2"></button>
+                <button class="option" id="option3"></button>
+                <button class="option" id="option4"></button>
+            </div>
+            <div id="feedback"></div>
+            <button id="explanation-button">Explanation</button>
+            <div id="explanation" class="hidden"></div>
+            <button id="next-button" class="hidden">Next</button>
+        </div>
+    </section>
+</body>
+</html>

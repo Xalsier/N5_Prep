@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Name Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/country-game.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <style>
+        .btn {
+            background-color: #FFAE42;
+            color: #3B2F2F;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #FFD27F;
+        }
+        
+        .hidden {
+            display: none;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guess The Country</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul id="navMenu"></ul>
+    </nav>
+
+    <!-- App Card Section -->
+    <section class="app-card">
+        <div class="card">
+            <h2>Guess the Country Name</h2>
+            <p>Can you guess the correct English name for the following country?</p>
+            
+            <!-- Display the country name in Katakana -->
+            <p id="katakana-country" style="font-size: 1.5em; font-weight: bold;"></p>
+
+            <!-- Input box for user to guess the country name -->
+            <input type="text" id="country-input" placeholder="Enter the country name in English" style="margin-top: 10px; padding: 10px; width: 80%;" />
+
+            <!-- Button to submit answer -->
+            <button id="submit-btn" class="btn" style="margin-top: 15px;">Submit</button>
+
+            <!-- Feedback message -->
+            <p id="feedback" style="margin-top: 15px;"></p>
+
+            <!-- Next question button -->
+            <button id="next-btn" class="btn hidden" style="margin-top: 15px;">Next Country</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 N5 Prep</p>
+    </footer>
+</body>
+</html>

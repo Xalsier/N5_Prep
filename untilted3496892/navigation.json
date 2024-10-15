@@ -1,0 +1,20 @@
+{
+    "navigation": [
+        {
+            "name": "Home",
+            "url": "index.html"
+        },
+        {
+            "name": "Yen (15)",
+            "url": "yen.html"
+        },
+        {
+            "name": "Time (15)",
+            "url": "time.html"
+        },
+        {
+            "name": "Country (21)",
+            "url": "country.html"
+        }
+    ]
+}

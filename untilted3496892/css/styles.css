@@ -1,0 +1,124 @@
+/* Base styles for dark brown aesthetic */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3B2F2F; /* Dark brown background */
+    color: #FFF; /* Bright white text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5C4033; /* Lighter brown for header */
+    padding: 20px;
+    text-align: center;
+    color: #FAF9F6; /* Off-white text */
+}
+
+nav {
+    background-color: #4B3A3A; /* Brown for navigation background */
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFAF0; /* Off-white for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFAE42; /* Pastel orange on hover */
+}
+
+footer {
+    background-color: #4B3A3A;
+    padding: 15px;
+    text-align: center;
+    color: #FFFAF0;
+}
+
+/* App card styling for larger game content */
+.app-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjusted for taller content */
+    margin: 20px 0; /* Margin for spacing */
+    margin-bottom: 100px;
+}
+
+.card {
+    background-color: #FAF9F6; /* Bright white for the card */
+    color: #3B2F2F; /* Dark brown text */
+    padding: 50px; /* Increased padding for larger content */
+    border-radius: 12px;
+    text-align: center;
+    width: 80%; /* Takes up more width on the page */
+    max-width: 900px; /* Max width for large screens */
+    height: 100%; /* Adjusted height to make room for game content */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow for emphasis */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header inside the app card */
+.card h2 {
+    margin: 0 0 20px 0;
+    font-size: 2em; /* Larger font for game titles */
+}
+
+/* Paragraphs or game descriptions */
+.card p {
+    margin: 0 0 20px 0;
+    font-size: 1.2em; /* Larger font for better readability */
+    line-height: 1.6;
+}
+
+/* For adding buttons, such as game start buttons */
+.card .btn {
+    background-color: #FFAE42; /* Pastel orange for buttons */
+    color: #3B2F2F; /* Dark brown text */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card .btn:hover {
+    background-color: #FFD27F; /* Lighter pastel on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        height: auto; /* Allow card to adjust based on content */
+        padding: 30px; /* Reduced padding for smaller screens */
+    }
+
+    .card h2 {
+        font-size: 1.8em; /* Slightly smaller title font */
+    }
+
+    .card p {
+        font-size: 1.1em; /* Smaller paragraph font */
+    }
+}

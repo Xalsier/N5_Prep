@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N5 Prep</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="countdown"></h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul id="navMenu"></ul>
+    </nav>
+
+    <!-- App Card -->
+    <section class="app-card">
+        <div class="card">
+            <strong>Featured N5 Kanji (25/80)</strong>
+            <p>午前後時分一二三四五六七八九十百千万円中国日本韓国</p>
+            <strong>Vocabulary (15/800)</strong>
+            Countrys
+            <strong>Extra (1)</strong>
+            <p>億</p>
+        </div>
+    </section>
+</body>
+<script>
+    $(document).ready(function() {
+    // Set the target date for JLPT (December 1, 2024, 12:01 AM)
+    var targetDate = new Date('December 1, 2024 00:01:00').getTime();
+
+    // Function to calculate and update the countdown
+    function updateCountdown() {
+        var now = new Date().getTime();
+        var distance = targetDate - now;
+
+        // Time calculations for days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="countdown"
+        $('#countdown').text(days + " days, " + hours + " hours, " + minutes + " minutes before the JLPT");
+
+        // If the countdown is over, display an appropriate message
+        if (distance < 0) {
+            $('#countdown').text("The JLPT has already started!");
+        }
+    }
+
+    // Update the countdown every 1 second
+    setInterval(updateCountdown, 1000);
+});
+
+</script>
+</html>
